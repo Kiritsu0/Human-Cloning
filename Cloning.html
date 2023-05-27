@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Cloning</title>
+</head>
+<body>
+    <style>
+        * {
+        scroll-behavior: smooth
+        }
+        body {
+            background: url(DNA.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            transition: background-image 2s ease, opacity 0.7s ease;
+        }
+
+        .head {
+            font-family: 'Britannic Bold';
+            font-size: 30px;
+            color: black;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            background-color: white;
+            position: fixed;
+            margin-top: 0%;
+            z-index: 99;
+            padding: 5px;
+            height: 75px;
+            width: 100%;
+            top: 0%;
+        }
+
+        .questions {
+            position: fixed;
+            margin-top: -93px;
+            display: none;
+        }
+
+        .container {
+            margin-top: 180px;
+            margin-bottom: 315px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 940px;
+            color: black;
+            border: 1px solid white;
+            background-color: #ffffff;
+            border-radius: 10px;
+            transition: 0.7s ease;
+            box-shadow: 0px 0px 50px rgb(15, 87, 182);
+            scroll-margin-top: 50vh;
+        }
+
+        .container h2 {
+            font-family: Elephant;
+        }
+
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        .container ul li p {
+            padding: 7px;
+            font-size: 20px;
+            font-family:'Elephant'
+
+        }
+
+        .list {
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: hsla(0, 0%, 100%, 0.5);
+            margin-top: 0px;
+            position: fixed;
+        }
+
+        .list li {
+            padding: 5px;
+            color: black;
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+
+        .list li:hover {
+            text-decoration: underline;
+            text-decoration-color: white;
+        }
+
+        .container:hover {
+            background-color: rgb(18, 133, 199);
+            transform: scale(1.1, 1.1);
+            transition: 0.7s;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            background-color: white;
+            width: 100%;
+            height: 80px;
+            margin: 0%;
+            padding: 0%;
+            font-family:Brush Script MT;
+            font-size: 50px;
+        }
+
+        .footer p {
+            padding: 10px;
+        }
+
+        @media (max-width: 1200px){
+            .head {
+                font-size: 25px;
+                height: 60px;
+            }
+
+            .container {
+                width: 500px;
+            }
+            .questions {
+                display: inline;
+            }
+            .list {
+                display: none;
+            }
+            .footer {
+                font-size: 30px;
+                height: 60px;
+            }
+        }
+        @media (max-width: 500px){
+            .head {
+                font-size: 20px;
+                height: 50px;
+            }
+
+            .container {
+                width: 300px;
+            }
+            .questions {
+                display: inline;
+            }
+            .list {
+                display: none;
+            }
+            .footer {
+                font-size: 25px;
+                height: 50px;
+            }
+        }
+
+    </style>
+    <nav>
+        <div class="head">
+            <h1>Human Cloning</h1>
+        </div>
+    </nav>
+
+    <aside>
+        <div>
+            <select class="questions" onchange="redirect()">
+                <option value="Q1">Question 1</option>
+                <option value="Q2">Question 2</option>
+                <option value="Q3">Question 3</option>
+                <option value="Q4">Question 4</option>
+                <option value="Q5">Question 5</option>
+                <option value="Q6">Question 6</option>
+                <option value="Q7">Question 7</option>
+            </select>
+
+        </div>
+        <div class="list">
+            <ul>
+                <a href="#Q1"><li>Question 1</li></a>
+                <a href="#Q2"><li>Question 2</li></a>
+                <a href="#Q3"><li>Question 3</li></a>
+                <a href="#Q4"><li>Question 4</li></a>
+                <a href="#Q5"><li>Question 5</li></a>
+                <a href="#Q6"><li>Question 6</li></a>
+                <a href="#Q7"><li>Question 7</li></a>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <div id="Q1" class="container">
+            <h2>1- What is human cloning?</h2>
+            <ul>
+                <li><p class="text">Human cloning is the process of creating an identical copy of a human being through scientific methods.
+                    It involves replicating the genetic material of an individual to produce a genetically identical clone.</p></li>
+            </ul>
+        <audio src="space-atmosphere.mp3" autoplay loop controls style="width:5px ;height: 5px;"></audio>
+        </div>
+
+        <div id="Q2" class="container">
+            <h2>2- Why is human cloning research important?</h2>
+            <ul>
+                <li><p class="text">Human cloning research holds significant potential for various areas, including medicine and scientific advancement.
+                    It can contribute to understanding genetic diseases, developing new treatments, and advancing regenerative medicine.
+                    Additionally, it may provide options for infertility treatments and personalized medicine.</p></li>
+            </ul>
+        </div>
+
+        
+        <div id="Q3" class="container">
+            <h2>3- What are the ethical concerns surrounding human cloning?</h2>
+            <ul>
+                <li><p class="text">Human cloning raises complex ethical questions. Some concerns include the violation of human dignity, potential for exploitation,
+                        loss of individuality, and ethical implications related to creating and manipulating human life.
+                        Public opinion on human cloning is diverse, with differing views on its morality and permissibility.</p></li>
+            </ul>
+        </div>
+
+        <div id="Q4" class="container">
+            <h2>4- How has human cloning research progressed historically?</h2>
+            <ul>
+                <li><p class="text">Human cloning research has a historical background, with notable milestones and advancements.
+                        Early attempts in cloning animals paved the way for later experiments in cloning mammals,
+                        including the famous cloning of Dolly the sheep in 1996. Since then, scientific understanding and techniques have improved,
+                        allowing for further exploration in human cloning.</p></li>
+            </ul>
+        </div>
+
+        <div id="Q5" class="container">
+            <h2>5- What is the current state of human cloning research?</h2>
+            <ul>
+                <li><p class="text">Currently, human cloning research is a dynamic field with ongoing studies and collaborations.
+                        Recent advancements include improved cloning techniques, such as somatic cell nuclear transfer (SCNT),
+                        and advancements in stem cell research. However, challenges and limitations persist, including low success rates and ethical considerations.</p></li>
+            </ul>
+        </div>
+
+        <div id="Q6" class="container">
+            <h2>6- What are the applications of human cloning?</h2>
+            <ul>
+                <li><p class="text">Human cloning has potential applications in reproductive cloning,
+                        allowing individuals with fertility issues to have genetically related offspring.
+                        Therapeutic cloning holds promise for disease research, drug development, and regenerative medicine.
+                        Moreover, human cloning research contributes to personalized medicine and the development of targeted genetic therapies.</p></li>
+            </ul>
+        </div>
+
+        <div id="Q7" class="container">
+            <h2>7- What ethical considerations and controversies?</h2>
+            <ul>
+                <li><p class="text">The ethical considerations of human cloning are extensive.
+                        Debates focus on issues of human dignity, individuality, and identity.
+                        There are concerns about the potential for exploitation, commodification of human life, and unintended consequences.
+                        Thorough examination and public discourse are crucial in addressing these complex ethical concerns.</p></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p> &copy; Done By: Hussein Deeb</p>
+        </div>
+    </footer>
+
+    <script>
+        backgroundImages = ['DNA.jpg', 'image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg']
+        index = 0
+        function backimage(){
+            index += 1
+            if (index > backgroundImages.length - 1){
+                index = 0;
+            }
+            let body = document.querySelector('body')
+            body.style.background = `url('${backgroundImages[index]}')`;
+            body.style.backgroundRepeat = 'no-repeat';
+            body.style.backgroundAttachment = 'fixed';
+            body.style.backgroundSize = 'cover';
+        }
+        setInterval(backimage, 10000);
+        function redirect(){
+            let value = document.querySelector('.questions').value;
+            let q1 = document.getElementById('Q1');
+            let q2 = document.getElementById('Q2');
+            let q3 = document.getElementById('Q3');
+            let q4 = document.getElementById('Q4');
+            let q5 = document.getElementById('Q5');
+            let q6 = document.getElementById('Q6');
+            let q7 = document.getElementById('Q7');
+
+            if(value === 'Q1'){
+                window.location.href = "#Q1";
+            }
+            
+            if(value === 'Q2'){
+                window.location.href = '#Q2';
+            }
+            
+            if(value === 'Q3'){
+                window.location.href = '#Q3';
+            }
+
+            if(value === 'Q4'){
+                window.location.href = '#Q4';
+            }
+
+            if(value === 'Q5'){
+                window.location.href = '#Q5';
+            }
+
+            if(value === 'Q6'){
+                window.location.href = '#Q6';
+            }
+
+            if(value === 'Q7'){
+                window.location.href = '#Q7';
+            }
+        }
+    </script>
+</body>
+</html>
